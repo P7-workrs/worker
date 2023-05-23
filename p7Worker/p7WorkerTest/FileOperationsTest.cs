@@ -10,6 +10,7 @@ using Serilog;
 using System.Text;
 using System.Threading;
 using p7Worker;
+using p7Worker.Filehandler;
 
 namespace p7WorkerTest;
 
@@ -17,9 +18,9 @@ public class FileOperationsTest
 {
     public FileOperationsTest()
     {
-        var fo = new FileOperations("/p7");
-        string filePath = "/p7/predTest.py";
-        var file = File.Create(filePath);
-        file.Close();
+        //var fo = new FileOperationsLinux("/p7");
+        //string filePath = "/p7/predTest.py";
+        //var file = File.Create(filePath);
+        //file.Close();
     }
 }
